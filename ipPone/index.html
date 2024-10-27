@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product Comparison Table</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * { margin: 0; padding: 0; }
+        *, *::before, *::after {
+            box-sizing: inherit;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            background: #eee;
+        }
+        .cd__main {
+            display: flex;
+            width: 100%;
+            background: #fff;
+            padding: 20px;
+        }
+        .cd__main {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        h2 {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .instruction {
+            text-align: right;
+            margin-bottom: 10px;
+            display: block;
+            margin-right: 10px;
+        }
+        em {
+            color: lightgrey;
+            font-size: 12px;
+            font-style: italic;
+        }
+        .zui-table {
+            border-collapse: separate;
+            border-spacing: 0;
+            margin-bottom: 0;
+            width: 100%;
+        }
+        th, td {
+            padding: 15px 20px;
+            text-align: left;
+            vertical-align: top;
+            border-left: 1px solid lightgrey;
+        }
+        th {
+            background: #f3f3f3;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background: #F3F3F3;
+        }
+        .product-img {
+            height: auto;
+            width: 150px;
+        }
+        .zui-wrapper {
+            max-width: 1200px;
+            position: relative;
+            overflow-x: scroll;
+            padding-bottom: 5px;
+            width: 100%;
+        }
+        .zui-sticky-col {
+            position: sticky;
+            left: 0;
+            background-color: #FFFFFF;
+            font-weight: 700;
+            min-width: 200px;
+            box-shadow: inset -15px 0 10px -7px rgba(0,0,0,0.15);
+        }
+        .zui-sticky-col.zui-stripe-row {
+            background-color: #F3F3F3;
+        }
+        a.product-link {
+            color: #0371BD;
+            text-decoration: none;
+        }
+        a.product-link:hover {
+            text-decoration: underline;
+        }
+        @media screen and (max-width: 768px) {
+            .zui-table .zui-sticky-col {
+                min-width: 125px;
+            }
+            .product-img {
+                width: 100px;
+            }
+        }
+        @media screen and (max-width: 1280px) {
+            .instruction {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<main class="cd__main">
+    <h2>ip Phones</h2>
+    <div class="zui-wrapper">
+        <div class="instruction">
+            <em><i class="fa fa-arrows-alt-h"></i> Swipe for more products</em>
+        </div>
+        <div id="container" class="zui-scroller">
+            <table class="zui-table">
+                <thead>
+                    <tr>
+                        <th class="zui-sticky-col">&nbsp;</th>
+                        <th class="table-col">
+                            <img class="product-img" src="prodacts/GXP1625.png">
+                            <div class="product-info">
+                                <h5><a href="#" class="product-link">grandstream<sup>&reg;</sup></a></h5>
+                            </div>
+                        </th>
+                        <th class="table-col">
+                            <img class="product-img" src="prodacts/gxp1628-500x500.png">
+                            <div class="product-info">
+                                <h5><a href="#" class="product-link">grandstream<sup>&reg;</sup></a></h5>
+                            </div>
+                        </th>
+                        <th class="table-col">
+                            <img class="product-img" src="prodacts/gxp2135_front_web.png">
+                            <div class="product-info">
+                                <h5><a href="#" class="product-link">grandstream<sup>&reg;</sup></a></h5>
+                            </div>
+                        </th>
+                        <th class="table-col">
+                            <img class="product-img" src="prodacts/gxp2170_right_ext_web.png">
+                            <div class="product-info">
+                                <h5><a href="#" class="product-link">grandstream<sup>&reg;</sup></a></h5>
+                            </div>
+                        </th>
+                        <th class="table-col">
+                            <img class="product-img" src="prodacts/grp2601_front_web.png">
+                            <div class="product-info">
+                                <h5><a href="#" class="product-link">grandstream</a></h5>
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="zui-sticky-col">Application</td>
+                        <td><strong>IP Phones</strong></td>
+                        <td><strong>IP Phones</strong></td>
+                        <td><strong>IP Phones</strong></td>
+                        <td><strong>IP Phones</strong></td>
+                        <td><strong>IP Phones</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="zui-sticky-col zui-stripe-row">Catalog Number</td>
+                        <td>GXP1625</td>
+                        <td>GXP1628</td>
+                        <td>GXP 2135</td>
+                        <td>GXP 2170</td>
+                        <td>GRP2601P</td>
+                    </tr>
+                    <tr>
+                        <td class="zui-sticky-col">Protocols/Standards</td>
+                        <td>SIP RFC3261, TCP/IP/UDP...</td>
+                        <td>SIP RFC3261, TCP/IP/UDP...</td>
+                        <td>SIP RFC3261, TCP/IP/UDP...</td>
+                        <td>SIP RFC3261, TCP/IP/UDP...</td>
+                        <td>SIP RFC3261, TCP/IP/UDP...</td>
+                    </tr>
+                    <tr>
+                        <td class="zui-sticky-col zui-stripe-row">Network Interfaces<sup>&trade;</sup></td>
+                        <td>10/100 Mbps Ethernet ports</td>
+                        <td>10/100/1000 Mbps Ethernet ports</td>
+                        <td>10/100/1000 Mbps Gigabit Ethernet ports</td>
+                        <td>10/100/1000 Mbps Gigabit Ethernet ports</td>
+                        <td>10/100 Mbps Ethernet ports</td>
+                    </tr>
+                    <tr>
+                        <td class="zui-sticky-col">Graphic Display</td>
+                        <td>132 x 48 backlit LCD display</td>
+                        <td>132 x 48 backlit LCD display</td>
+                        <td>2.8 inch TFT color LCD</td>
+                        <td>4.3 inch TFT color LCD</td>
+                        <td>132 x 48 LCD display</td>
+                    </tr>
+                    <tr>
+                        <td class="zui-sticky-col zui-stripe-row">Feature Keys</td>
+                        <td>2 line keys with dual-color LED</td>
+                        <td>4 line keys with dual-color LED</td>
+                        <td>8 line keys with dual-color LED</td>
+                        <td>12 line keys with dual-color LED</td>
+                        <td>4 programmable line keys</td>
+                    </tr>
+                    <tr>
+                        <td class="zui-sticky-col">Voice Codecs</td>
+                        <td>G.711, G.722, G.729...</td>
+                        <td>G.711, G.722, G.729...</td>
+                        <td>G.711, G.722, G.729...</td>
+                        <td>G.711, G.722, G.729...</td>
+                        <td>G.711, G.722, G.729...</td>
+                    </tr>
+                    <tr>
+                        <td class="zui-sticky-col zui-stripe-row">Telephony Features</td>
+                        <td>Call hold, transfer, conference...</td>
+                        <td>Call hold, transfer, conference...</td>
+                        <td>Call hold, transfer, conference...</td>
+                        <td>Call hold, transfer, conference...</td>
+                        <td>Call hold, transfer, conference...</td>
+                    </tr>
+                    <tr>
+                        <td class="zui-sticky-col">Power Supply</td>
+                        <td>PoE, AC adapter (optional)</td>
+                        <td>PoE, AC adapter (optional)</td>
+                        <td>PoE, AC adapter (optional)</td>
+                        <td>PoE, AC adapter (optional)</td>
+                        <td>PoE, AC adapter (optional)</td>
+                    </tr>
+                    <tr>
+                        <td class="zui-sticky-col zui-stripe-row">Dimensions</td>
+                        <td>205 x 130 x 40 mm</td>
+                        <td>205 x 130 x 40 mm</td>
+                        <td>205 x 130 x 50 mm</td>
+                        <td>205 x 130 x 50 mm</td>
+                        <td>205 x 130 x 45 mm</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>
