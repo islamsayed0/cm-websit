@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEM Park</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .text-section, .map-section, .highlight-section {
+            flex: 1 1 300px; /* Flex-grow, flex-shrink, and base size */
+        }
+
+        .text-section p, .highlight-section p {
+            line-height: 1.6;
+        }
+
+        .map-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .map-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .highlight-section {
+            background-color: #FFEB3B;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .highlight-section .content-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap; /* Allow wrapping for smaller screens */
+        }
+
+        .highlight-section .text {
+            flex: 1;
+            min-width: 250px; /* Minimum width for text */
+        }
+
+        .highlight-section .image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .highlight-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .additional-images {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap; /* Allow wrapping for smaller screens */
+        }
+
+        .additional-images img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            flex: 1 1 200px; /* Flex-grow, flex-shrink, and base size */
+        }
+
+        /* Media Queries for responsive design */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .content {
+                flex-direction: column; /* Stack content on small screens */
+            }
+
+            .highlight-section .content-wrapper {
+                flex-direction: column; /* Stack text and image */
+            }
+
+            .highlight-section .text, .highlight-section .image {
+                flex: 1; /* Allow equal space */
+                min-width: 100%; /* Full width on small screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 1.5em;
+            }
+
+            .text-section p, .highlight-section p {
+                font-size: 0.9em; /* Adjust text size */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Header Section -->
+    <div class="header">
+        <h1>GEM PARK</h1>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="content">
+        <!-- Text Section -->
+        <div class="text-section">
+            <p>At the west of the Greater Cairo Region, a civil focus lights up, which will illuminate a new path for the global human community when one of the most important national projects is ever completed. That project will be an urban space with a degree of a civilized national nucleus that carries with it the genes of the unique Egyptian past and the accumulated chromosomes of Egyptian society next to the first and last wonder of the world “foot of the pyramids” linking it to one of the most important keys of the cultural and civilizational heritage “The Grand Egyptian Museum”.</p>
+        </div>
+
+        <!-- Map Section -->
+        <div class="map-section">
+            <img src="p.png" alt="Map of Project Location">
+        </div>
+    </div>
+
+    <!-- Highlight Section -->
+    <div class="highlight-section">
+        <div class="content-wrapper">
+            <div class="text">
+                <h2>This vacuum is also called the “GEM PARK”</h2>
+                <p>As Grand Egyptian Museum’s Park, at this genius and unique site on an area of 560,000 square meters with its geographical and spatial surroundings between the museum and the pyramids of Giza, will cause a qualitative shift in the different fields that will mainly contribute to the restoration of Egypt on top the global tourism map again through a group of recreational, cultural and social uses and activities, as we have promised by the political desire that insists on moving forward in order to achieve its wise vision.</p>
+            </div>
+            <div class="image">
+                <img src="pp.png" alt="Image of Pyramids">
+            </div>
+        </div>
+        
+        <!-- Additional Images Section -->
+        <div class="additional-images">
+            <img src="project-overview.png" alt="Project Overview Image">
+            <img src="image.png" alt="New Project Image">
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
